@@ -548,8 +548,12 @@
             </div>
           </div>
 
-          <!-- Contact form -->
-          <form class="contact-form glass reveal" id="contactForm" novalidate>
+          <!-- Contact form (delivered via Web3Forms to bajajdhanush@gmail.com) -->
+          <form class="contact-form glass reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <!-- Web3Forms access key (public by design; safe to expose) -->
+            <input type="hidden" name="access_key" value="f84ee480-4c74-4330-a261-4c2dff856f68" />
+            <!-- Honeypot field to trap spam bots (hidden from real users) -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Name</label>

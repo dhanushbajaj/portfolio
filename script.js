@@ -143,9 +143,9 @@
   });
 
   /* ============================================================
-     6. CONTACT FORM VALIDATION
-     Lightweight client-side validation; ready to wire to a real
-     backend / email service later.
+     6. CONTACT FORM VALIDATION + SUBMISSION
+     Client-side validation, then submits to Web3Forms which emails
+     the message to bajajdhanush@gmail.com (no backend required).
      ============================================================ */
   const form     = document.getElementById("contactForm");
   const formNote = document.getElementById("formNote");
@@ -177,16 +177,51 @@
         return;
       }
 
-      // Success — here you'd POST to your backend / email API
-      formNote.textContent = "Thanks! Your message has been sent. ✅";
-      formNote.className = "form-note success";
-      form.reset();
+      // Submit to Web3Forms, which emails the message to bajajdhanush@gmail.com.
+      const submitBtn = form.querySelector("button[type='submit']");
+      const originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+      formNote.textContent = "";
+      formNote.className = "form-note";
 
-      // Clear the note after a few seconds
-      setTimeout(function () {
-        formNote.textContent = "";
-        formNote.className = "form-note";
-      }, 5000);
+      fetch(form.action, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form), // includes access_key + all fields
+      })
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          if (data.success) {
+            formNote.textContent = "Thanks! Your message has been sent. ✅";
+            formNote.className = "form-note success";
+            form.reset();
+          } else {
+            // Web3Forms responded but rejected the submission
+            formNote.textContent =
+              "Something went wrong. Please email me directly at bajajdhanush@gmail.com.";
+            formNote.className = "form-note error";
+          }
+        })
+        .catch(function () {
+          // Network/connection error
+          formNote.textContent =
+            "Network error. Please email me directly at bajajdhanush@gmail.com.";
+          formNote.className = "form-note error";
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          // Clear a success note after a few seconds
+          if (formNote.classList.contains("success")) {
+            setTimeout(function () {
+              formNote.textContent = "";
+              formNote.className = "form-note";
+            }, 6000);
+          }
+        });
     });
 
     // Clear the invalid state as the user types
