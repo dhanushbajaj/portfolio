@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of a full-stack software developer — projects in Kubernetes, ASP.NET Core, QNX real-time systems, APIs, and cloud." />
+  <title>Dhanush Bajaj — Software Developer</title>
+
+  <!-- Google Fonts: Space Grotesk for headings, Inter for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-mark">&lt;/&gt;</span> Dhanush
+      </a>
+
+      <!-- Desktop / mobile nav links -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile hamburger toggle -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <main>
+    <!-- ===================== HERO / HOME ===================== -->
+    <section id="home" class="hero">
+      <!-- Animated background layers -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orb orb-1" aria-hidden="true"></div>
+      <div class="hero-orb orb-2" aria-hidden="true"></div>
+      <div class="hero-orb orb-3" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal">Hello, I'm</p>
+        <h1 class="hero-name reveal">Dhanush Bajaj</h1>
+        <h2 class="hero-title reveal">
+          <span class="gradient-text">Full-Stack Software Developer</span>
+        </h2>
+        <p class="hero-intro reveal">
+          I build clean, practical, and scalable software — from cloud-native
+          platforms and REST APIs to real-time systems. Computer Programming
+          student with a passion for turning hard problems into elegant solutions.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          <a href="Dhanush_Bajaj_CV.pdf" class="btn btn-ghost" download>Download Resume</a>
+        </div>
+
+        <div class="hero-socials reveal">
+          <a href="https://github.com/dhanushbajaj" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">GitHub</a>
+          <a href="https://www.linkedin.com/in/dhanush-bajaj-0a662a215/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">LinkedIn</a>
+          <a href="mailto:bajajdhanush@gmail.com" aria-label="Email" class="social-icon">Email</a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll to About">
+        <span class="mouse"></span>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">About Me</h2>
+        </header>
+
+        <div class="about-grid">
+          <!-- Profile image / avatar placeholder -->
+          <div class="about-visual reveal">
+            <div class="avatar-frame">
+              <img src="avatar.svg" alt="Illustrated avatar of Dhanush Bajaj" class="avatar-img" />
+            </div>
+            <div class="about-badges">
+              <span class="mini-badge">Problem Solver</span>
+              <span class="mini-badge">Fast Learner</span>
+            </div>
+          </div>
+
+          <div class="about-text reveal">
+            <p>
+              I'm a Computer Programming student and developer who loves building
+              software that's <strong>clean, practical, and scalable</strong>. I enjoy
+              working across the full stack — designing intuitive frontends, writing
+              solid backend services, and wiring everything together with reliable APIs.
+            </p>
+            <p>
+              My interests span <strong>web development, cloud, Kubernetes, APIs, and
+              real-time systems</strong>. I've built everything from a Kubernetes-based
+              marketplace to a QNX Neutrino real-time door entry system, and I'm always
+              chasing the next technology to learn.
+            </p>
+            <p>
+              My strengths are <strong>problem-solving, debugging, learning quickly, and
+              shipping real applications</strong>. I care about code quality, thoughtful
+              architecture, and a great user experience.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-num">6+</span>
+                <span class="stat-label">Featured Projects</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">15+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">∞</span>
+                <span class="stat-label">Curiosity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-tag">02 — Skills</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-sub">A toolbox built across frontend, backend, cloud, and systems programming.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card glass reveal">
+            <h3 class="skill-cat"><span class="skill-dot"></span>Frontend</h3>
+            <div class="skill-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <h3 class="skill-cat"><span class="skill-dot"></span>Backend</h3>
+            <div class="skill-tags">
+              <span>Node.js</span><span>Express</span><span>Python</span><span>Flask</span><span>C#</span><span>ASP.NET Core</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <h3 class="skill-cat"><span class="skill-dot"></span>Databases</h3>
+            <div class="skill-tags">
+              <span>SQLite</span><span>SQL Server</span><span>Entity Framework Core</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <h3 class="skill-cat"><span class="skill-dot"></span>Cloud / DevOps</h3>
+            <div class="skill-tags">
+              <span>Docker</span><span>Kubernetes</span><span>Azure Blob Storage</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <h3 class="skill-cat"><span class="skill-dot"></span>Tools</h3>
+            <div class="skill-tags">
+              <span>Git</span><span>GitHub</span><span>Visual Studio</span><span>VS Code</span><span>Postman</span><span>Swagger</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <h3 class="skill-cat"><span class="skill-dot"></span>Systems / Concepts</h3>
+            <div class="skill-tags">
+              <span>Linux</span><span>QNX Neutrino</span><span>Real-Time Systems</span><span>Message Passing</span><span>Resource Managers</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-tag">03 — Projects</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-sub">A selection of things I've designed, built, and shipped.</p>
+        </header>
+
+        <!-- Filter buttons -->
+        <div class="filters reveal" id="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="cloud">Cloud / DevOps</button>
+          <button class="filter-btn" data-filter="realtime">Real-Time Systems</button>
+          <button class="filter-btn" data-filter="api">APIs</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Kyube -->
+          <article class="project-card glass reveal" data-category="cloud fullstack web">
+            <div class="project-thumb">
+              <span class="thumb-emoji">🧊</span>
+              <span class="project-badge">Cloud / DevOps</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Kyube — Kubernetes Marketplace</h3>
+              <p class="project-desc">
+                A Kubernetes-based marketplace for software tools. Browse and discover
+                internal tools, plugins, and datasets through searchable, filterable listings.
+              </p>
+              <ul class="project-features">
+                <li>Searchable &amp; filterable tool catalog</li>
+                <li>Container-native deployment</li>
+                <li>Discover plugins &amp; datasets</li>
+              </ul>
+              <div class="project-tech">
+                <span>React</span><span>Kubernetes</span><span>Docker</span><span>Java</span><span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-link">GitHub</a>
+                <a href="#" class="btn-link">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- QNX Door Entry -->
+          <article class="project-card glass reveal" data-category="realtime">
+            <div class="project-thumb">
+              <span class="thumb-emoji">🚪</span>
+              <span class="project-badge">Real-Time Systems</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">QNX Door Entry System</h3>
+              <p class="project-desc">
+                Real-time door entry simulation on QNX Neutrino using message passing,
+                channels, pulses, and a clean state-machine design.
+              </p>
+              <ul class="project-features">
+                <li>Simulates scans, weight scale &amp; locks</li>
+                <li>Guard actions &amp; state machine</li>
+                <li>Channels &amp; pulse-driven events</li>
+              </ul>
+              <div class="project-tech">
+                <span>QNX Neutrino</span><span>C</span><span>Message Passing</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-link">GitHub</a>
+                <a href="#" class="btn-link">More Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- QNX Metronome -->
+          <article class="project-card glass reveal" data-category="realtime">
+            <div class="project-thumb">
+              <span class="thumb-emoji">🎵</span>
+              <span class="project-badge">Real-Time Systems</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">QNX Metronome Resource Manager</h3>
+              <p class="project-desc">
+                A QNX resource manager exposing device files and interval-timer-driven
+                ticks, controllable through a clean command interface.
+              </p>
+              <ul class="project-features">
+                <li>Commands: start, stop, pause, set, quit, help</li>
+                <li>Interval timers &amp; pulses</li>
+                <li>Device file interface</li>
+              </ul>
+              <div class="project-tech">
+                <span>QNX Neutrino</span><span>C</span><span>Resource Manager</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-link">GitHub</a>
+                <a href="#" class="btn-link">More Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ASP.NET Deals Finder -->
+          <article class="project-card glass reveal" data-category="web fullstack">
+            <div class="project-thumb">
+              <span class="thumb-emoji">🏷️</span>
+              <span class="project-badge">Web Development</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">ASP.NET Core Deals Finder</h3>
+              <p class="project-desc">
+                An MVC web application that manages customers, stores, and subscriptions
+                with full CRUD functionality and Razor views.
+              </p>
+              <ul class="project-features">
+                <li>Customers, stores &amp; subscriptions</li>
+                <li>Full CRUD with Razor views</li>
+                <li>EF Core data layer</li>
+              </ul>
+              <div class="project-tech">
+                <span>C#</span><span>ASP.NET Core</span><span>EF Core</span><span>SQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-link">GitHub</a>
+                <a href="#" class="btn-link">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Azure Blob Image Prediction -->
+          <article class="project-card glass reveal" data-category="cloud web fullstack">
+            <div class="project-thumb">
+              <span class="thumb-emoji">☁️</span>
+              <span class="project-badge">Cloud / DevOps</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Azure Blob Image Prediction App</h3>
+              <p class="project-desc">
+                A Razor Pages app that lets users upload and manage image predictions,
+                backed by Azure Blob Storage with secure file-upload logic.
+              </p>
+              <ul class="project-features">
+                <li>Upload &amp; manage image predictions</li>
+                <li>Azure containers &amp; blob storage</li>
+                <li>Secure file-upload handling</li>
+              </ul>
+              <div class="project-tech">
+                <span>ASP.NET Razor</span><span>Azure Blob</span><span>EF Core</span><span>C#</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-link">GitHub</a>
+                <a href="#" class="btn-link">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Student Web API -->
+          <article class="project-card glass reveal" data-category="api web">
+            <div class="project-thumb">
+              <span class="thumb-emoji">🔌</span>
+              <span class="project-badge">APIs</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Student Web API</h3>
+              <p class="project-desc">
+                A REST API built with ASP.NET Core Web API featuring Swagger docs,
+                validation, and clean, well-structured controllers.
+              </p>
+              <ul class="project-features">
+                <li>Swagger / OpenAPI documentation</li>
+                <li>Validation &amp; CRUD endpoints</li>
+                <li>Structured API responses</li>
+              </ul>
+              <div class="project-tech">
+                <span>ASP.NET Core</span><span>Swagger</span><span>EF Core</span><span>REST</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-link">GitHub</a>
+                <a href="#" class="btn-link">More Details</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE / EDUCATION ===================== -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-tag">04 — Journey</span>
+          <h2 class="section-title">Experience &amp; Education</h2>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2023 — Present</span>
+              <h3>Computer Engineering — Advanced Diploma</h3>
+              <p class="timeline-org">Algonquin College</p>
+              <p>
+                Studying software development, real-time systems, web technologies, and
+                databases. Relevant coursework: data structures, operating systems,
+                web programming, OOP, and embedded/real-time programming with QNX.
+              </p>
+              <div class="project-tech">
+                <span>QNX</span><span>ASP.NET Core</span><span>C / C#</span><span>Databases</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2024</span>
+              <h3>Kyube — Capstone / Team Project</h3>
+              <p class="timeline-org">Kubernetes Marketplace</p>
+              <p>
+                Designed and built a container-native marketplace for internal tools and
+                datasets using React, Kubernetes, Docker, Java, and Python. Implemented
+                searchable, filterable listings and a scalable deployment model.
+              </p>
+              <div class="project-tech">
+                <span>React</span><span>Kubernetes</span><span>Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2024</span>
+              <h3>Real-Time Systems Projects</h3>
+              <p class="timeline-org">QNX Neutrino</p>
+              <p>
+                Built a door entry system and a metronome resource manager on QNX,
+                applying message passing, channels, pulses, interval timers, and
+                state-machine design in a true real-time environment.
+              </p>
+              <div class="project-tech">
+                <span>QNX Neutrino</span><span>C</span><span>Resource Managers</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2023 — 2024</span>
+              <h3>Web &amp; API Development</h3>
+              <p class="timeline-org">Coursework &amp; Personal Projects</p>
+              <p>
+                Delivered multiple ASP.NET Core applications and REST APIs, including
+                the Deals Finder MVC app, an Azure Blob image-prediction app, and a
+                documented Student Web API with Swagger and EF Core.
+              </p>
+              <div class="project-tech">
+                <span>ASP.NET Core</span><span>EF Core</span><span>Azure</span><span>Swagger</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESUME ===================== -->
+    <section id="resume" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-tag">05 — Resume</span>
+          <h2 class="section-title">My Resume</h2>
+        </header>
+
+        <div class="resume-card glass reveal">
+          <div class="resume-info">
+            <h3>Curious about the details?</h3>
+            <p>
+              My resume covers my education, technical skills, featured projects, and
+              hands-on experience across full-stack and systems development. Grab a copy
+              to see the full picture.
+            </p>
+            <div class="resume-highlights">
+              <span class="highlight-chip">Full-Stack Development</span>
+              <span class="highlight-chip">Kubernetes &amp; Docker</span>
+              <span class="highlight-chip">ASP.NET Core</span>
+              <span class="highlight-chip">QNX Real-Time Systems</span>
+              <span class="highlight-chip">API Development</span>
+              <span class="highlight-chip">Cloud Storage</span>
+            </div>
+            <a href="Dhanush_Bajaj_CV.pdf" class="btn btn-primary" download>⬇ Download Resume (PDF)</a>
+          </div>
+          <div class="resume-doc" aria-hidden="true">
+            <div class="doc-line lg"></div>
+            <div class="doc-line"></div>
+            <div class="doc-line"></div>
+            <div class="doc-line short"></div>
+            <div class="doc-line"></div>
+            <div class="doc-line short"></div>
+            <div class="doc-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-tag">06 — Contact</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-sub">Have a project, a question, or just want to say hi? Let's talk.</p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Contact info -->
+          <div class="contact-info reveal">
+            <div class="contact-item">
+              <span class="contact-ico">✉️</span>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:bajajdhanush@gmail.com">bajajdhanush@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-ico">💼</span>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/dhanush-bajaj-0a662a215/" target="_blank" rel="noopener">linkedin.com/in/dhanush-bajaj</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-ico">🐙</span>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/dhanushbajaj" target="_blank" rel="noopener">github.com/dhanushbajaj</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-ico">📍</span>
+              <div>
+                <span class="contact-label">Location</span>
+                <span>Ottawa, Ontario</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <form class="contact-form glass reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="bajajdhanush@gmail.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="nav-logo"><span class="logo-mark">&lt;/&gt;</span> Dhanush</a>
+      <p>© <span id="year"></span> Dhanush Bajaj. Built with clean HTML, CSS &amp; JavaScript.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

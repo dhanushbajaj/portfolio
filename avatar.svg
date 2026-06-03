@@ -1,0 +1,91 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated avatar of Dhanush Bajaj">
+  <defs>
+    <!-- Brand gradients (match the site's accent colors) -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#181b35"/>
+      <stop offset="1" stop-color="#0d0f1f"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="120" y1="120" x2="280" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e9b48c"/>
+      <stop offset="1" stop-color="#c98b63"/>
+    </linearGradient>
+    <linearGradient id="hoodie" x1="80" y1="260" x2="320" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6c5ce7"/>
+      <stop offset="1" stop-color="#00d2ff"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="130" y1="80" x2="270" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2a2235"/>
+      <stop offset="1" stop-color="#15121d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#6c5ce7" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#6c5ce7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff5edb"/>
+      <stop offset="0.5" stop-color="#6c5ce7"/>
+      <stop offset="1" stop-color="#00d2ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" rx="48" fill="url(#bgGrad)"/>
+  <ellipse cx="200" cy="178" rx="150" ry="150" fill="url(#glow)"/>
+
+  <!-- Subtle code-grid pattern -->
+  <g opacity="0.06" stroke="#ffffff" stroke-width="1">
+    <path d="M0 100 H400 M0 200 H400 M0 300 H400 M100 0 V400 M200 0 V400 M300 0 V400"/>
+  </g>
+
+  <!-- Decorative orbit ring -->
+  <circle cx="200" cy="190" r="135" stroke="url(#ring)" stroke-width="2.5" opacity="0.5" fill="none" stroke-dasharray="6 10"/>
+
+  <!-- ============ Character ============ -->
+  <!-- Shoulders / hoodie -->
+  <path d="M70 400 C70 320 120 286 200 286 C280 286 330 320 330 400 Z" fill="url(#hoodie)"/>
+  <!-- Hoodie collar -->
+  <path d="M158 292 C175 320 225 320 242 292 L238 286 C220 300 180 300 162 286 Z" fill="#0d0f1f" opacity="0.35"/>
+
+  <!-- Neck -->
+  <path d="M178 250 L178 296 C178 308 222 308 222 296 L222 250 Z" fill="url(#skin)"/>
+  <path d="M178 262 C190 276 210 276 222 262 L222 250 L178 250 Z" fill="#000" opacity="0.12"/>
+
+  <!-- Head -->
+  <rect x="142" y="120" width="116" height="142" rx="56" fill="url(#skin)"/>
+  <!-- Ears -->
+  <circle cx="142" cy="196" r="12" fill="url(#skin)"/>
+  <circle cx="258" cy="196" r="12" fill="url(#skin)"/>
+
+  <!-- Hair -->
+  <path d="M138 196 C130 150 158 108 200 108 C242 108 270 150 262 196 C262 170 250 152 238 150 C238 138 220 132 200 132 C180 132 162 138 162 150 C150 152 138 170 138 196 Z" fill="url(#hair)"/>
+  <path d="M162 150 C180 140 220 140 238 150 C236 142 220 136 200 136 C180 136 164 142 162 150 Z" fill="#ffffff" opacity="0.08"/>
+
+  <!-- Eyebrows -->
+  <path d="M162 186 q14 -8 30 -2" stroke="#2a2235" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M208 184 q16 -6 30 2" stroke="#2a2235" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Glasses (developer vibe) -->
+  <g stroke="#10121f" stroke-width="5" fill="none">
+    <rect x="156" y="194" width="42" height="32" rx="10"/>
+    <rect x="202" y="194" width="42" height="32" rx="10"/>
+    <path d="M198 208 h4"/>
+    <path d="M156 204 l-12 -4"/>
+    <path d="M244 204 l12 -4"/>
+  </g>
+  <!-- Lens shine -->
+  <rect x="160" y="198" width="34" height="24" rx="8" fill="#00d2ff" opacity="0.10"/>
+  <rect x="206" y="198" width="34" height="24" rx="8" fill="#00d2ff" opacity="0.10"/>
+
+  <!-- Eyes -->
+  <circle cx="177" cy="210" r="4.5" fill="#2a2235"/>
+  <circle cx="223" cy="210" r="4.5" fill="#2a2235"/>
+
+  <!-- Nose -->
+  <path d="M200 214 l-5 18 q5 5 10 0" stroke="#b06f4a" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Smile -->
+  <path d="M180 244 q20 16 40 0" stroke="#9c5638" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Code tag on hoodie -->
+  <text x="200" y="372" font-family="'Space Grotesk', monospace" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle" opacity="0.9">&lt;/&gt;</text>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"C:\\\\Users\\\\Dhanush Bajaj\\\\Desktop\\\\RESUME AND SHIZ\\\\Dhanush_Bajaj_CV.pdf\" \"D:\\\\portfolio\\\\Dhanush_Bajaj_CV.pdf\" && ls -la \"D:\\\\portfolio\\\\Dhanush_Bajaj_CV.pdf\")",
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git -c user.name=\"Dhanush Bajaj\" -c user.email=\"bajajdhanush@gmail.com\" commit -m \"Initial portfolio site\")"
+    ]
+  }
+}
