@@ -1,0 +1,22 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DB monogram logo">
+  <defs>
+    <linearGradient id="dbGrad" x1="14" y1="14" x2="86" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff5edb"/>
+      <stop offset="0.5" stop-color="#6c5ce7"/>
+      <stop offset="1" stop-color="#00d2ff"/>
+    </linearGradient>
+    <linearGradient id="dbText" x1="28" y1="30" x2="72" y2="74" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e8eaf2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded badge with gradient border -->
+  <rect x="6" y="6" width="88" height="88" rx="26" fill="#0d0f1f"/>
+  <rect x="6" y="6" width="88" height="88" rx="26" fill="url(#dbGrad)" opacity="0.16"/>
+  <rect x="8" y="8" width="84" height="84" rx="24" stroke="url(#dbGrad)" stroke-width="3" fill="none"/>
+
+  <!-- DB monogram -->
+  <text x="50" y="50" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="42" font-weight="700"
+        fill="url(#dbText)" text-anchor="middle" dominant-baseline="central" letter-spacing="-2">DB</text>
+</svg>

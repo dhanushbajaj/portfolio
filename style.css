@@ -150,6 +150,15 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: -0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+/* DB monogram badge used in nav + footer */
+.logo-img {
+  width: 34px;
+  height: 34px;
+  display: block;
 }
 .logo-mark {
   background: var(--gradient);

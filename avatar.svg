@@ -6,18 +6,18 @@
       <stop offset="1" stop-color="#0d0f1f"/>
     </linearGradient>
     <linearGradient id="skin" x1="120" y1="120" x2="280" y2="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#e9b48c"/>
-      <stop offset="1" stop-color="#c98b63"/>
+      <stop offset="0" stop-color="#d9a079"/>
+      <stop offset="1" stop-color="#b97f56"/>
     </linearGradient>
-    <linearGradient id="hoodie" x1="80" y1="260" x2="320" y2="400" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#6c5ce7"/>
-      <stop offset="1" stop-color="#00d2ff"/>
+    <linearGradient id="blazer" x1="70" y1="280" x2="330" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#23252f"/>
+      <stop offset="1" stop-color="#121319"/>
     </linearGradient>
-    <linearGradient id="hair" x1="130" y1="80" x2="270" y2="200" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#2a2235"/>
-      <stop offset="1" stop-color="#15121d"/>
+    <linearGradient id="hair" x1="130" y1="78" x2="270" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2c2533"/>
+      <stop offset="1" stop-color="#0f0c14"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.6">
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.62">
       <stop offset="0" stop-color="#6c5ce7" stop-opacity="0.45"/>
       <stop offset="1" stop-color="#6c5ce7" stop-opacity="0"/>
     </radialGradient>
@@ -26,11 +26,15 @@
       <stop offset="0.5" stop-color="#6c5ce7"/>
       <stop offset="1" stop-color="#00d2ff"/>
     </linearGradient>
+    <linearGradient id="pendant" x1="190" y1="280" x2="210" y2="312" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dfe7ff"/>
+      <stop offset="1" stop-color="#9fb0d8"/>
+    </linearGradient>
   </defs>
 
   <!-- Background -->
   <rect width="400" height="400" rx="48" fill="url(#bgGrad)"/>
-  <ellipse cx="200" cy="178" rx="150" ry="150" fill="url(#glow)"/>
+  <ellipse cx="200" cy="172" rx="150" ry="150" fill="url(#glow)"/>
 
   <!-- Subtle code-grid pattern -->
   <g opacity="0.06" stroke="#ffffff" stroke-width="1">
@@ -38,54 +42,76 @@
   </g>
 
   <!-- Decorative orbit ring -->
-  <circle cx="200" cy="190" r="135" stroke="url(#ring)" stroke-width="2.5" opacity="0.5" fill="none" stroke-dasharray="6 10"/>
+  <circle cx="200" cy="188" r="135" stroke="url(#ring)" stroke-width="2.5" opacity="0.5" fill="none" stroke-dasharray="6 10"/>
 
   <!-- ============ Character ============ -->
-  <!-- Shoulders / hoodie -->
-  <path d="M70 400 C70 320 120 286 200 286 C280 286 330 320 330 400 Z" fill="url(#hoodie)"/>
-  <!-- Hoodie collar -->
-  <path d="M158 292 C175 320 225 320 242 292 L238 286 C220 300 180 300 162 286 Z" fill="#0d0f1f" opacity="0.35"/>
+  <!-- Blazer shoulders -->
+  <path d="M64 400 C66 322 116 288 200 288 C284 288 334 322 336 400 Z" fill="url(#blazer)"/>
+
+  <!-- White t-shirt (crew neck) -->
+  <path d="M168 296 C182 330 218 330 232 296 L232 400 L168 400 Z" fill="#f3f5fb"/>
+  <path d="M168 296 C182 330 218 330 232 296 L226 292 C214 318 186 318 174 292 Z" fill="#d7dbe6"/>
+
+  <!-- Blazer lapels over the shirt -->
+  <path d="M150 300 L196 312 L182 400 L120 400 C120 360 130 322 150 300 Z" fill="url(#blazer)"/>
+  <path d="M250 300 L204 312 L218 400 L280 400 C280 360 270 322 250 300 Z" fill="url(#blazer)"/>
+  <path d="M150 300 L196 312 L188 348 L160 322 Z" fill="#ffffff" opacity="0.05"/>
+  <path d="M250 300 L204 312 L212 348 L240 322 Z" fill="#ffffff" opacity="0.05"/>
+
+  <!-- Pendant necklace on cord -->
+  <path d="M186 294 Q200 320 214 294" stroke="#cfd6e6" stroke-width="2.5" fill="none" opacity="0.85"/>
+  <path d="M200 306 l-7 11 l7 9 l7 -9 Z" fill="url(#pendant)" stroke="#aebbd8" stroke-width="1"/>
 
   <!-- Neck -->
-  <path d="M178 250 L178 296 C178 308 222 308 222 296 L222 250 Z" fill="url(#skin)"/>
+  <path d="M178 250 L178 298 C178 310 222 310 222 298 L222 250 Z" fill="url(#skin)"/>
   <path d="M178 262 C190 276 210 276 222 262 L222 250 L178 250 Z" fill="#000" opacity="0.12"/>
 
   <!-- Head -->
-  <rect x="142" y="120" width="116" height="142" rx="56" fill="url(#skin)"/>
+  <rect x="142" y="118" width="116" height="144" rx="56" fill="url(#skin)"/>
   <!-- Ears -->
-  <circle cx="142" cy="196" r="12" fill="url(#skin)"/>
-  <circle cx="258" cy="196" r="12" fill="url(#skin)"/>
+  <circle cx="142" cy="194" r="12" fill="url(#skin)"/>
+  <circle cx="258" cy="194" r="12" fill="url(#skin)"/>
 
-  <!-- Hair -->
-  <path d="M138 196 C130 150 158 108 200 108 C242 108 270 150 262 196 C262 170 250 152 238 150 C238 138 220 132 200 132 C180 132 162 138 162 150 C150 152 138 170 138 196 Z" fill="url(#hair)"/>
-  <path d="M162 150 C180 140 220 140 238 150 C236 142 220 136 200 136 C180 136 164 142 162 150 Z" fill="#ffffff" opacity="0.08"/>
+  <!-- Hair: short sides, fuller textured quiff swept up -->
+  <path d="M140 196
+           C132 168 134 138 150 120
+           C158 110 170 104 184 102
+           C188 92 206 90 216 98
+           C236 100 256 116 260 148
+           C262 164 260 184 260 196
+           C256 176 246 162 236 158
+           C236 150 230 146 222 146
+           C220 132 196 128 182 138
+           C176 134 166 138 164 148
+           C152 152 142 170 140 196 Z" fill="url(#hair)"/>
+  <!-- Quiff strands / texture highlights -->
+  <path d="M176 128 C188 116 206 114 218 120" stroke="#4a3f55" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <path d="M168 140 C182 128 204 126 222 134" stroke="#3a3146" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M150 150 C160 136 176 130 190 130" stroke="#4a3f55" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5"/>
 
   <!-- Eyebrows -->
-  <path d="M162 186 q14 -8 30 -2" stroke="#2a2235" stroke-width="5" stroke-linecap="round" fill="none"/>
-  <path d="M208 184 q16 -6 30 2" stroke="#2a2235" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M160 184 q14 -7 30 -2" stroke="#1e1826" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M210 182 q16 -5 30 2" stroke="#1e1826" stroke-width="5" stroke-linecap="round" fill="none"/>
 
-  <!-- Glasses (developer vibe) -->
-  <g stroke="#10121f" stroke-width="5" fill="none">
-    <rect x="156" y="194" width="42" height="32" rx="10"/>
-    <rect x="202" y="194" width="42" height="32" rx="10"/>
-    <path d="M198 208 h4"/>
-    <path d="M156 204 l-12 -4"/>
-    <path d="M244 204 l12 -4"/>
+  <!-- Round thin-framed glasses -->
+  <g stroke="#15171f" stroke-width="4.5" fill="none">
+    <circle cx="176" cy="206" r="22"/>
+    <circle cx="224" cy="206" r="22"/>
+    <path d="M198 204 q2 -4 4 0"/>
+    <path d="M154 202 l-12 -3"/>
+    <path d="M246 202 l12 -3"/>
   </g>
-  <!-- Lens shine -->
-  <rect x="160" y="198" width="34" height="24" rx="8" fill="#00d2ff" opacity="0.10"/>
-  <rect x="206" y="198" width="34" height="24" rx="8" fill="#00d2ff" opacity="0.10"/>
+  <!-- Lens tint -->
+  <circle cx="176" cy="206" r="19" fill="#00d2ff" opacity="0.08"/>
+  <circle cx="224" cy="206" r="19" fill="#00d2ff" opacity="0.08"/>
 
   <!-- Eyes -->
-  <circle cx="177" cy="210" r="4.5" fill="#2a2235"/>
-  <circle cx="223" cy="210" r="4.5" fill="#2a2235"/>
+  <circle cx="176" cy="208" r="4.5" fill="#1e1826"/>
+  <circle cx="224" cy="208" r="4.5" fill="#1e1826"/>
 
   <!-- Nose -->
-  <path d="M200 214 l-5 18 q5 5 10 0" stroke="#b06f4a" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M200 212 l-5 20 q5 5 10 0" stroke="#a06a45" stroke-width="3.5" stroke-linecap="round" fill="none"/>
 
-  <!-- Smile -->
-  <path d="M180 244 q20 16 40 0" stroke="#9c5638" stroke-width="4.5" stroke-linecap="round" fill="none"/>
-
-  <!-- Code tag on hoodie -->
-  <text x="200" y="372" font-family="'Space Grotesk', monospace" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle" opacity="0.9">&lt;/&gt;</text>
+  <!-- Slight smile -->
+  <path d="M182 244 q18 14 36 0" stroke="#8a4f33" stroke-width="4.5" stroke-linecap="round" fill="none"/>
 </svg>
